@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="bdr.tabpaneapp.controller.MainController">
+
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="New Tab" onAction="#handleNewTab"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <center>
+        <AnchorPane fx:id="tabArea">
+            <children>
+                <TabPane fx:id="tabPane" layoutX="0" layoutY="0" prefWidth="800" prefHeight="600" />
+            </children>
+        </AnchorPane>
+    </center>
+
+</BorderPane>
