@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane stylesheets="@styles.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="bdr.tableviewana.controller.TaskTableController">
+    <center>
+        <TableView fx:id="taskTable" editable="true" stylesheets="@styles.css" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="colNo" text="No" />
+                <TableColumn fx:id="colId" text="Id" />
+                <TableColumn fx:id="colName" text="Task Name" />
+                <TableColumn fx:id="colDesc" text="Task Description" />
+                <TableColumn fx:id="colStart" text="Start Date" />
+                <TableColumn fx:id="colFinish" text="Finish Date" />
+                <TableColumn fx:id="colDuration" text="Duration" />
+                <TableColumn fx:id="colUnit" text="Unit" />
+                <TableColumn fx:id="colQty" text="Quantity" />
+                <TableColumn fx:id="colPrice" text="Unit Price" />
+                <TableColumn fx:id="colAmount" text="Amount" />
+                <TableColumn fx:id="colComments" text="Comments" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
